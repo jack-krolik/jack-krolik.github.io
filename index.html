@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jack Krolik Portfolio</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <!-- Header and Navigation -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#home" class="logo">Jack Krolik Portfolio</a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects, Publications & Research</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>          
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle">☰</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome, I'm <span>Jack Krolik</span></h1>
+        <p class="hero-subtitle">Building tools at the intersection of data science and brain health.</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>My name is Jack Krolik, and I’m a Neuroscience and Data Science student at Northeastern University with a deep passion for improving lives through technology—particularly in the fields of brain health and medicine. My journey has been shaped by personal experience, scientific curiosity, and a drive to make an impact through data and innovation.</p>
+          <p>My interest in the brain started in high school when I joined a mental health club and began reading books like <em>Grit</em> by Angela Duckworth. That early curiosity became personal during my freshman year of college, when I suffered a concussion. I used exercise to stimulate blood flow to my brain, and it helped me recover faster than expected. That experience taught me the power of the brain-body connection—and it reinforced my desire to better understand how we can support brain health through science and technology.</p>
+          <p>At the same time, I developed a love for data through fitness. Tracking workouts, analyzing trends, and setting measurable goals gave me a real appreciation for how data could be used to optimize performance and drive meaningful progress. That passion grew into a broader fascination with data science and its power to improve lives, especially in healthcare. It’s why I chose to study both neuroscience and data science in college—because I believe the future of health lies at the intersection of the two.</p>
+          <p>Currently, I volunteer at UCSF in the Neuropsychiatry Lab led by Dr. Andrew Krystal. I’m working on a clinical-grade research project that uses over 1,000 hours of intracranial EEG recordings from epilepsy patients. I developed a deep learning pipeline—based on CNN-LSTM architectures with multi-head attention—to classify sleep stages and identify misfiring neurons. This approach improved accuracy by over 10% compared to existing methods. We’re now preparing the work for publication and open-sourcing the code so other researchers and clinicians can benefit from it.</p>
+          <p>I’ve also volunteered at Northeastern’s Brain ImPACT Lab, where I’ve led exercise interventions for traumatic brain injury (TBI) patients. I help facilitate EEG and MRI assessments and analyze data to explore how physical activity affects brain recovery and plasticity. It’s incredibly meaningful to work directly with patients and see the human side of neuroscience—it constantly reminds me why this work matters.</p>
+          <p>In industry, I’ve led impactful projects—from launching a web-based medical calculator at Suki AI to building a regulatory compliance chatbot at MasterControl using Neo4j, Mistral-7B, and Retrieval-Augmented Generation (RAG). I’ve also co-authored a paper on automating medical Q&A evaluation with LLMs, reducing review time by 96%.</p>
+          <p>Looking ahead, I’m exploring industry opportunities, especially roles that combine technical execution with leadership—like product management or R&D-focused positions. I’m also open to pursuing a PhD in the future if the right research opportunity arises. No matter the path, I want to be at the intersection of data science, neuroscience, and innovation—building tools that improve lives and empower clinicians and patients alike.</p>
+        </div>
+        <div class="about-image">
+          <img src="/api/placeholder/400/400" alt="Profile Photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <p class="timeline-date">May 2024 – Present</p>
+            <h3 class="timeline-title">Computational Neuroscience Research Volunteer</h3>
+            <p>UCSF, Neuropsychiatry Lab</p>
+            <ul>
+              <li>Developed CNN-LSTM deep learning pipeline for iEEG-based sleep staging.</li>
+              <li>Improved classification accuracy by 15% using custom attention modules.</li>
+              <li>Preparing open-source release and peer-reviewed publication.</li>
+            </ul>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <p class="timeline-date">Aug 2024 – Dec 2024</p>
+            <h3 class="timeline-title">Data Engineer</h3>
+            <p>MasterControl, Salt Lake City, UT</p>
+            <ul>
+              <li>Built a regulatory chatbot using Neo4j, Mistral-7B, and RAG, reducing FDA query response times by 75%.</li>
+              <li>Developed an AI-powered QA exam generator that cut manual curation time by 70%.</li>
+              <li>Presented innovations to 1,000+ professionals at the 2024 Masters Summit.</li>
+            </ul>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <p class="timeline-date">May 2024 – Aug 2024</p>
+            <h3 class="timeline-title">Product Manager Intern</h3>
+            <p>Suki.AI, Redwood City, CA</p>
+            <ul>
+              <li>Led development of a web-based medical calculator for clinicians.</li>
+              <li>Built an LLM evaluation system using GPT-4, reducing manual review by 96%.</li>
+              <li>First author on a publication optimizing LLMs for medical Q&A workflows.</li>
+            </ul>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Hidden for now, renamed and Brain ImPACT Lab moved here) -->
+<section id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects, Publications & Research</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Brain ImPACT Lab</h3>
+            <p>Undergraduate Research Assistant at Northeastern University (Sept 2024 – Present).</p>
+            <ul>
+              <li>Led TBI patient interventions 3x weekly in a 12-week program to assess cognitive recovery.</li>
+              <li>Supported EEG, MRI, and VO₂ Max evaluations and refined data collection protocols.</li>
+              <li>Collaborated with an interdisciplinary team to optimize research and improve data quality.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Publication: LLMs for Medical Q&A Evaluation</h3>
+            <p><strong>Krolik, J.</strong>, Mahal, H., Ahmad, F., Trivedi, G., & Saket, B. (2024). "<em>Towards Leveraging Large Language Models for Automated Medical Q&A Evaluation</em>." <a href="https://arxiv.org/abs/2409.01941" target="_blank">arXiv:2409.01941 [cs.CL]</a>.</p>
+            <ul>
+              <li>First author publication demonstrating a 96% reduction in medical Q&A evaluation time using LLM-based automation.</li>
+              <li>Achieved 85% agreement with physician reviewers and reduced evaluation costs by 90%.</li>
+              <li>Presented novel methodology for automating evaluation processes in clinical NLP tasks.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests & Highlights Section -->
+<section id="highlights">
+    <div class="container">
+      <h2 class="section-title">Interests, Accomplishments & Current Work</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">🏊‍♂️ 2022 IRONMAN 70.3 – Salem, Oregon</h3>
+            <p>Successfully completed the Half Ironman triathlon, a 70.3-mile endurance event combining swimming, cycling, and running. This experience strengthened my mindset, goal-setting discipline, and understanding of human performance optimization.</p>
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">📬 Favorite Newsletters & Blogs</h3>
+            <ul>
+              <li><strong>Not Boring</strong> – Packy Mccormick</li>
+              <li><strong>Slate Star Codex</strong> – Scott Alexander</li>
+              <li><strong>Morning Brew </strong> – Daily updates on tech, business, and current events.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">💪 Personal Trainer – YMCA</h3>
+            <p>Worked as a certified personal trainer at the YMCA, where I guided clients in strength training, cardiovascular health, and performance tracking. This role deepened my interest in the brain-body connection and gave me insight into motivating behavior change at an individual level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h3>Email</h3>
+              <p>jackrkrolik@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🔗</span>
+            <div>
+              <h3>Social</h3>
+              <p><a href="https://www.linkedin.com/in/jack-krolik/">LinkedIn</a></p>
+              <p><a href="https://github.com/jack-krolik">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/jack-krolik/" class="social-link">LinkedIn</a>
+        <a href="https://github.com/jack-krolik" class="social-link">GitHub</a>
+      </div>
+      <p class="footer-text">© 2025 Jack Krolik. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
