@@ -175,7 +175,7 @@
   
 
   <!-- Contact Section -->
-  <section id="contact">
+  <!-- <section id="contact">
     <div class="container">
       <h2 class="section-title">Contact Me</h2>
       <div class="contact-content">
@@ -217,7 +217,57 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+  <!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-content">
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xgvalrkg" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" class="form-control" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" class="form-control" required></textarea>
+        </div>
+
+        <!-- Optional redirect after submission -->
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+        <button type="submit" class="btn">Send Message</button>
+        <div id="form-status" class="form-status-message" style="margin-top: 1rem;"></div>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📧</span>
+          <div>
+            <h3>Email</h3>
+            <p>jackrkrolik@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🔗</span>
+          <div>
+            <h3>Social</h3>
+            <p><a href="https://www.linkedin.com/in/jack-krolik/">LinkedIn</a></p>
+            <p><a href="https://github.com/jack-krolik">GitHub</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>

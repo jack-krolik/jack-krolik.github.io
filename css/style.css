@@ -522,3 +522,30 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Form Status Message */
+.form-status-message {
+    display: none; /* 🔥 hide by default */
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    background-color: #f0f0ff;
+    color: var(--accent-color);
+    /* border: 1px solid var(--accent-color); */
+    /* box-shadow: var(--box-shadow); */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .form-status-message.success {
+    /* background-color: #f0fdf4; */
+    color: #646cff;
+    /* border-color: #0f9d58; */
+  }
+  
+  .form-status-message.error {
+    /* background-color: #fff5f5; */
+    color: #646cff;
+    /* border-color: #d93025; */
+  }
